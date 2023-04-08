@@ -27,10 +27,6 @@ function App() {
 
   const navigate = useNavigate();
 
-  const handleClick = () => {
-    navigate("/Landing");
-  }
-
   useEffect(() => {
     const intervalId = setInterval(() => {
       const iriPElement = document.getElementById('IriP');
@@ -215,7 +211,6 @@ function App() {
                 <Weather location={profile.area} />
               </div>
 
-              <button onClick={handleClick} >hi</button>
 
             </div>
           } />
