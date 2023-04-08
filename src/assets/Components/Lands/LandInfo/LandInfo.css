@@ -1,0 +1,67 @@
+.Land-info-dashboard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 30px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease-in-out;
+    padding: 20px;
+    height: 50vh;
+    min-width: 300px;
+    text-align: center;
+    background-color: rgb(33, 37, 41);
+}
+
+.Land-info-dashboard ul {
+    list-style: none;
+    padding: 0px;
+}
+
+.Land-info-dashboard ul li {
+    margin: 5px 0px;
+}
+
+.Land-info-dashboard:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.Land-info-image {
+    width: 40%;
+    position: relative;
+}
+
+.Land-info-details {
+    width: 100%;
+    padding: 20px;
+    border-radius: 0 10px 10px 0;
+    background-color: rgb(33, 37, 41);
+    color: azure;
+    height: 100%;
+}
+
+
+@media screen and (max-width: 768px) {
+    .Land-info-dashboard {
+        height: fit-content;
+    }
+
+}
+
+.Land-info-list .btn-container {
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.Land-info-list .btn-container button {
+    padding: 5px 7px;
+    border-radius: 5px;
+    background-color: rgb(33, 37, 41);
+    color: azure;
+    border: 0.1px solid azure;
+    margin: 0px 5px;
+
+}

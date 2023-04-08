@@ -1,0 +1,80 @@
+#welcome {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: azure;
+}
+
+#welcomeText {
+    font-size: 10rem;
+}
+
+#name {
+    font-size: 7rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+@media (max-width: 740px) {
+    #welcomeText {
+        font-size: 7rem;
+    }
+
+    #name {
+        font-size: 4rem;
+    }
+}
+
+@media (max-width: 540px) {
+    #welcomeText {
+        font-size: 4rem;
+    }
+
+    #name {
+        font-size: 2rem;
+    }
+
+}
+
+.transition {
+    transition: all 1.5s ease-out;
+}
+
+.hidden {
+    opacity: 0;
+    transform: translateY(-100px);
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#welcome::before {
+    content: ' ';
+    background-image: url('../../canola-fields-1911392_960_720.jpg');
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1;
+    opacity: 0.8;
+    background-size: cover;
+    transition: all 0.5s ease-in-out;
+}
+
+#welcome::before {
+    filter: blur(0px);
+}
+
+#welcome.blur::before {
+    filter: blur(3px);
+}

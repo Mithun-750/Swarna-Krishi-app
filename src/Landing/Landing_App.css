@@ -1,0 +1,31 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+
+
+#supreme_container{
+  overflow: hidden;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+.supreme_dark{
+  background-color: rgb(27, 29, 36)
+}
+.supreme_light{
+  background-color: rgb(235, 236, 240);
+}
+#root{
+  max-width: 100vw;
+  min-height: 100vh;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.divider{
+  height: 10px;
+}
+
+.modal-backdrop{
+  --bs-backdrop-zindex: 1025;
+}

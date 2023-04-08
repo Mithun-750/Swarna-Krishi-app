@@ -1,0 +1,123 @@
+.App-navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    flex-wrap: wrap;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    transition: background-color 1s ease-out;
+    background-color: rgb(33, 37, 41);
+    color: azure;
+    text-shadow: none;
+    border-bottom: 2px solid azure;
+    z-index: 10;
+}
+
+.App-navbar.Notvisible {
+    background-color: rgba(33, 37, 41, 0);
+    color: black;
+    text-shadow: 1px 1px 10px azure;
+    border-bottom: none;
+}
+
+#logo {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+        'Lucida Sans', Arial, sans-serif;
+    transition: all 0.5s ease-in-out;
+}
+
+#logo:hover {
+    transform: scale(1.1) rotate(1deg);
+}
+
+.App-navbar-menu {
+    display: flex;
+    width: 500px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.App-navbar-item {
+    font-weight: bold;
+    list-style: none;
+    transition: all 0.2s ease-out;
+}
+
+.App-navbar-item:hover {
+    transform: scale(1.1);
+}
+
+.App-navlink {
+    text-decoration-line: none;
+    color: azure;
+}
+
+.App-navlink.Notvisible {
+    text-decoration-line: none;
+    color: black;
+}
+
+.App-navbar-toggle {
+    display: none;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 2rem;
+    color: azure;
+}
+
+@media (max-width: 600px) {
+    #logo {
+        font-size: 24px;
+    }
+
+    .App-navbar-toggle {
+        display: block;
+    }
+
+    .App-navbar-menu {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        flex-direction: column;
+        list-style: none;
+        text-align: center;
+        height: 0;
+        overflow: hidden;
+        transition: all 0.3s ease-out;
+        align-items: center;
+    }
+
+    .App-navbar-menu.active {
+        height: 200px;
+        display: flex;
+        justify-content: space-around;
+        padding-top: 15px;
+        transition: height 0.3s ease-in;
+    }
+
+    .App-navbar-item a {
+        margin: 0.5rem 0;
+        text-align: center;
+        padding: 7px 73px;
+        background-color: #2e2222;
+        width: 25%;
+        border-radius: 10px;
+    }
+
+    .App-navbar-link {
+        display: block;
+        padding: 0.5rem;
+        color: azure;
+        text-decoration: none;
+        transition: all 0.2s;
+    }
+
+    .App-navbar-link:hover {
+        background-color: #555;
+    }
+}

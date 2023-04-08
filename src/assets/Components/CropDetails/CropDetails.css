@@ -1,0 +1,32 @@
+.CropDetails {
+    margin-top: 120px;
+    color: azure;
+    flex-direction: column;
+}
+
+
+#addCrop {
+    width: 80vw;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid azure;
+    border-radius: 10px;
+    flex-direction: column;
+    cursor: pointer;
+    margin-bottom: 30px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease-in-out;
+    color: azure;
+    text-decoration: none;
+}
+
+#addCrop:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+#addCrop h3 {
+    margin: 5px;
+}

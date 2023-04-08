@@ -1,0 +1,149 @@
+body {
+    background-color: rgb(27, 29, 36);
+}
+
+.weather-container.gone,
+.timer.gone {
+    transform: translateY(-50px);
+    opacity: 0;
+}
+
+.weather-container,
+.timer {
+    transition: all 0.5s ease-in-out;
+}
+
+.logged-container {
+    width: 97vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 10px auto;
+    flex-wrap: wrap;
+}
+
+.title {
+    color: azure;
+    margin: 20px auto;
+}
+
+#IriT2 {
+    position: absolute;
+    bottom: 100px;
+    left: 110px;
+    color: white;
+    text-shadow: 1px 1px 10px black;
+    transition: all 0.5s ease-in-out;
+}
+
+#IriP2 {
+    position: absolute;
+    bottom: 70px;
+    left: 110px;
+    color: white;
+    text-shadow: 1px 1px 10px black;
+    transition: all 0.5s ease-in-out;
+}
+
+#FerT2 {
+    position: absolute;
+    bottom: 100px;
+    right: 110px;
+    color: white;
+    text-shadow: 1px 1px 10px black;
+    transition: all 0.5s ease-in-out;
+}
+
+
+#FerP2 {
+    position: absolute;
+    bottom: 70px;
+    right: 110px;
+    color: white;
+    text-shadow: 1px 1px 10px black;
+}
+
+
+#FerT2.gone,
+#IriP2.gone,
+#IriT2.gone,
+#FerP2.gone {
+    transform: translateY(50px);
+    opacity: 0;
+}
+
+
+
+@media (max-width:635px) {
+    #IriT2 {
+        bottom: 25vh;
+        left: 0px;
+        width: 100vw;
+        text-align: center;
+    }
+
+    #IriP2 {
+        width: 100vw;
+        text-align: center;
+        left: 0px;
+        bottom: 20vh;
+
+    }
+
+    #FerT2 {
+        right: 0px;
+        width: 100vw;
+        bottom: 12.5vh;
+        text-align: center;
+    }
+
+    #FerP2 {
+        right: 0px;
+        text-align: center;
+        width: 100vw;
+        bottom: 7.5vh;
+    }
+
+
+}
+
+@media (max-width:400px) {
+    #IriT2 {
+        bottom: 25vh;
+    }
+
+    #IriP2 {
+        bottom: 20vh;
+
+    }
+
+    #FerT2 {
+        bottom: 10vh;
+    }
+
+    #FerP2 {
+        bottom: 5vh;
+    }
+
+
+}
+
+
+.loader {
+    border: 16px solid rgb(33, 37, 41);
+    border-top: 16px solid rgb(27, 29, 36);
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

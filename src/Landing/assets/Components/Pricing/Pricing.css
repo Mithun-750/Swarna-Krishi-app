@@ -1,0 +1,11 @@
+.card{
+    border-width: 2px;
+}
+
+.card-header{
+    border-bottom: 2px solid;
+}
+
+.a_heading{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}

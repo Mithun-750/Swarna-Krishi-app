@@ -1,0 +1,14 @@
+.logo {
+    font-family: 'Edu NSW ACT Foundation', cursive;
+    /* text-shadow: 1px 1px 2px #6a3e3e; */
+    color: aliceblue;
+    margin: 0px;
+}
+
+nav {
+    background-color: rgb(35, 39, 48);
+}
+
+.transition {
+    transition: all 0.5s ease-in-out;
+}
