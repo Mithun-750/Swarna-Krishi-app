@@ -4,7 +4,6 @@ import Navbar from './assets/Components/Navbar/Navbar';
 import Welcome from './assets/Components/Welcome/Welcome';
 import CountdownTimer from './assets/Components/Timer/Timer';
 import Weather from './assets/Components/Weather/Weather';
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
